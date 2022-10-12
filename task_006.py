@@ -16,8 +16,6 @@ A = distance(Ax, Ay)
 B = distance(Bx, By)
 C = distance(Cx, Cy)
 
-min_num = 0
-
 if A < B and A < C:
     print("A minimum: ", A)
 elif B < A and B < C:

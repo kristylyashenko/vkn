@@ -16,7 +16,9 @@ y = 0.0
 
 if x >= 3.86:
      y = f1(x)
-elif x <= 1.54:
+elif 1.54 < x:
+     y = f2(x)
+else:
      y = f3(x)
 
 print(y)

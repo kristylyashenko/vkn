@@ -1,11 +1,11 @@
 import math 
 
-def fun(x):
-    return math.exp(x) + math.sqrt(math.fabs(x))
+def fun(a):
+    return math.exp(a) + math.sqrt(math.fabs(a))
 
-a = int(input("Введіть нижню границю: "))
-b = int(input("Введіть верхню границю: "))
-h = int(input("Введіть крок: "))
+a = float(input("Введіть нижню границю: "))
+b = float(input("Введіть верхню границю: "))
+h = float(input("Введіть крок: "))
 
 while a < b:
     print(fun(a))

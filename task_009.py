@@ -1,15 +1,20 @@
 import math 
 
-def fun(x):
-    return math.exp(x) + math.sqrt(math.fabs(x))
+def fun(i):
+    return math.exp(i) + math.sqrt(math.fabs(i))
 
-a = int(input("Введіть нижню границю: "))
-b = int(input("Введіть верхню границю: "))
-h = int(input("Введіть крок: "))
+def frange(x, y, jump):
+    while x < y:
+        yield x
+        x += jump
+
+a = float(input("Введіть нижню границю: "))
+b = float(input("Введіть верхню границю: "))
+h = float(input("Введіть крок: "))
 
 list_range = []
 
-for i in range(a, b, h):
+for i in frange(a, b, h):
     list_range.append(fun(i))
 
 print(list_range)
